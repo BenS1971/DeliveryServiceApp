@@ -15,15 +15,20 @@ namespace DeliveryServiceRepo.repository;
     public double ItemQuantity { get; set;}
 
     public double CustomerId { get; set;}
-    public Deliveries() []
     
-    public Deliveries(DateTime OrderDate, DateTime DeliveryDate, string OrderSatus, double ItemNumber, double ItemQuantity, double CustomerId)
-    { 
-        OrderDate = OrderDate;
-        DeliveryDate = DeliveryDate;
-        OrderStatus = OrderStatus;
-        ItemNumber = ItemNumber;
-        ItemQuantity = ItemQuantity;
-        CustomerId = CustomerId;
+    
+    public DeliveryService(DateTime OrderDate, DateTime DeliveryDate, string OrderSatus, double ItemNumber, double ItemQuantity, double CustomerId)
+    {
+        this.OrderDate = OrderDate;
+        this.DeliveryDate = DeliveryDate;
+        this.OrderStatus = OrderStatus;
+        this.ItemNumber = ItemNumber;
+        this.ItemQuantity = ItemQuantity;
+        this.CustomerId = CustomerId;
+    }
+
+    internal void Add(DeliveryService deliveryService)
+    {
+        throw new NotImplementedException();
     }
 }

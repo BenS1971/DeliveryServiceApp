@@ -9,15 +9,20 @@ public class DeliveryServiceRepo
     // Create Delivery...
     public void AddDeliveryToList(DeliveryService deliveryService)
     {
-        _deliveryservice.Add(deliveryService);
+        deliveryService.Add(deliveryService);
     }
     // Read a delivery...
     public List<DeliveryService> GetDeliveryList(DeliveryService);
     {
         return new List<DeliveryService>(_listOfDeliveries);
     }
-    // Update deliveries...
-    public bool UpdateDeliveryList(DeliveryService deliveryService);
+
+internal class _listOfDeliveries
+{
+}
+
+// Update deliveries...
+public bool UpdateDeliveryList(DeliveryService deliveryService);
 
         //Find that delivery content...
         DeliveryService oldContent = GetDeliveryList();
