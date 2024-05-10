@@ -27,5 +27,8 @@ namespace DeliveryServiceRepo.repository;
         CustomerId = CustomerId;
     }
 
-    
+    internal void AddDeliveryToList(DeliveryService deliveryService)
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -9,7 +9,7 @@ public class DeliveryServiceRepo
     // Create Delivery...
     public void AddDeliveryToList(DeliveryService deliveryService)
     {
-        deliveryService.Add(deliveryService);
+        deliveryService.AddDeliveryToList(deliveryService);
     }
     // Read a delivery...
     public List<DeliveryService> GetDeliveryList(DeliveryService);
@@ -17,9 +17,7 @@ public class DeliveryServiceRepo
         return new List<DeliveryService>(_listOfDeliveries);
     }
 
-internal class _listOfDeliveries
-{
-}
+
 
 // Update deliveries...
 public bool UpdateDeliveryList(DeliveryService deliveryService);

@@ -1,10 +1,11 @@
 namespace DeliveryService.UnitTests;
 
 [TestClass]
-public class UnitTest1
+public class DeliveryServiceTest1
 {
     [TestMethod]
     public void TestMethod1()
     {
+        
     }
 }
