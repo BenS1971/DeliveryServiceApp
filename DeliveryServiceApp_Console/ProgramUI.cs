@@ -1,5 +1,6 @@
 using System.ComponentModel.Design;
 
+
 public class ProgramUI
 {
     public void Run()
@@ -26,12 +27,16 @@ public class ProgramUI
         switch (input)
         {
             case "1":
+                AddNewDelivery();
                 break;
             case "2":
+                ListInTransitDelivery();
                 break;
             case "3":
+                UpdateDeliveryStatus();
                 break;
             case "4":
+                DeleteDelivery();
                 break;
             case "5":
                 System.Console.WriteLine("Goodbye.");

@@ -8,9 +8,7 @@ public class DeliveryServiceTest1
     [TestMethod]
     public void SetDelivery_ShouldSetDeliveryString()
     {
-        AddDeliveryToList content = new AddDeliveryToList();
+        
     }
 
-    
 }
-
